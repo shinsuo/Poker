@@ -87,11 +87,12 @@ bool HelloWorld::init()
     
     
     m_menu= CCMenu::node();
-    
-    for (int i = 0; i < 100; i++) {
+    char fileName[7];
+    for (int i = 0; i < 14; i++) {
 //        CCSprite *sprite = CCSprite::spriteWithFile("ttt.png");
 //        spriteBatchNode->addChild(sprite);
         
+        /*
         CCMenuItemImage *tCloseItem = CCMenuItemImage::itemFromNormalImage(
                                                                            "CloseNormal.png",
                                                                            "CloseSelected.png",
@@ -106,6 +107,18 @@ bool HelloWorld::init()
         CCSprite *temp = CCSprite::spriteWithFile("6.png");
         tCloseItem->addChild(temp);
         temp->cocos2d::CCNode::setPosition(10, 60);
+        */
+
+        sprintf(fileName, "%d.png",i+1);
+        CCLog("fileName:%s",fileName);
+        CCSprite *num = CCSprite::spriteWithFile(fileName);
+        
+        CCSprite *club = CCSprite::spriteWithFile("club.png");
+        club->addChild(num);
+        CCLog("%f,%f",club->getTextureRect().size.width,club->getTextureRect().size.height);
+        num->cocos2d::CCNode::setPosition(11,club->getTextureRect().size.height-14);
+        addChild(club);
+        club->cocos2d::CCNode::setPosition(i*25, 50);
         
 //        sprite->setIsVisible(1);
     }
@@ -155,6 +168,11 @@ bool HelloWorld::init()
     
     Poker *pk = new Poker(1, kHEART);
     CCLog("pk:%i,%i",pk->getValue(),pk->getType());
+    
+    
+   
+//    club->setPosition(ccp(size.width / 2, size.height/2) );
+    
     
 	this->schedule(schedule_selector(HelloWorld::update),1);
 	return true;
