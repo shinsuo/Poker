@@ -1,0 +1,25 @@
+1.洗牌-》发牌-》这些有服务器控制，然后服务器将发牌的数据传给客户端
+
+    server 54张分给三个人一个人18张
+    server将一个长度为54的数组，随即分为三组，发给client，client限制出牌的逻辑，玩家出牌后发送到server，server广播给其他client，以便同步
+
+
+
+    client将小组内组员各自的牌存放在数组中，组员出几个就少几个
+    
+    牌的判断规则：
+        1.大点压小点     PokerOne
+        2.两个一样可以出   PokerTwo
+        3.三个一样可以带一张出        PokerThree
+        4.四个一样可以带一对或者两张不同的  PokerFour
+        5.三个以上两两可以出 PokerTwoThree
+        6.两个以上三三可以出 PokerThreeTwo
+        7.五个以上单张连着可以出   PokerFiveOne
+        
+
+        
+        红桃 heart
+        梅花 club
+        方块 diamond
+        黑桃 spade
+        

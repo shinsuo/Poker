@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		543A6B221679FDD600F29722 /* Rules in Resources */ = {isa = PBXBuildFile; fileRef = 543A6B211679FDD600F29722 /* Rules */; };
+		543A6B26167A017500F29722 /* Poker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 543A6B24167A017500F29722 /* Poker.cpp */; };
 		54D618BC1674D13E00143430 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D618BB1674D13E00143430 /* QuartzCore.framework */; };
 		54D618BE1674D13E00143430 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D618BD1674D13E00143430 /* OpenGLES.framework */; };
 		54D618C01674D13E00143430 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D618BF1674D13E00143430 /* OpenAL.framework */; };
@@ -145,6 +147,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		543A6B211679FDD600F29722 /* Rules */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rules; sourceTree = "<group>"; };
+		543A6B24167A017500F29722 /* Poker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Poker.cpp; sourceTree = "<group>"; };
+		543A6B25167A017500F29722 /* Poker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Poker.h; sourceTree = "<group>"; };
 		54D618B71674D13E00143430 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54D618BB1674D13E00143430 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		54D618BD1674D13E00143430 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -1024,6 +1029,9 @@
 				54D61A731674D14000143430 /* AppDelegate.cpp */,
 				54D61A751674D14000143430 /* HelloWorldScene.h */,
 				54D61A761674D14000143430 /* HelloWorldScene.cpp */,
+				543A6B24167A017500F29722 /* Poker.cpp */,
+				543A6B25167A017500F29722 /* Poker.h */,
+				543A6B211679FDD600F29722 /* Rules */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -1091,6 +1099,7 @@
 				54D618E31674D13E00143430 /* iTunesArtwork in Resources */,
 				54D61A821675687E00143430 /* 6.png in Resources */,
 				54D61A8916757FD500143430 /* ttt.png in Resources */,
+				543A6B221679FDD600F29722 /* Rules in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1215,6 +1224,7 @@
 				54D61A701674D14000143430 /* RootViewController.mm in Sources */,
 				54D61A741674D14000143430 /* AppDelegate.cpp in Sources */,
 				54D61A771674D14000143430 /* HelloWorldScene.cpp in Sources */,
+				543A6B26167A017500F29722 /* Poker.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

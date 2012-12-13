@@ -1,6 +1,7 @@
 #include "HelloWorldScene.h"
 #include "SimpleAudioEngine.h"
 //#include "SecondScene.h"
+#include "Poker.h"
 
 using namespace cocos2d;
 using namespace CocosDenshion;
@@ -150,6 +151,10 @@ bool HelloWorld::init()
 //        
 //        menu->addChild(tt, i);
 //    }
+    
+    
+    Poker *pk = new Poker(1, kHEART);
+    CCLog("pk:%i,%i",pk->getValue(),pk->getType());
     
 	this->schedule(schedule_selector(HelloWorld::update),1);
 	return true;
