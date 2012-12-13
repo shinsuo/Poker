@@ -251,6 +251,9 @@ namespace cocos2d{
      */
     class CC_DLL CCMenuItemImage : public CCMenuItemSprite
     {
+        
+        CC_SYNTHESIZE(bool,m_hasSelected,Selected);
+        
     public:
         CCMenuItemImage(){}
         virtual ~CCMenuItemImage(){}
@@ -264,6 +267,8 @@ namespace cocos2d{
         static CCMenuItemImage* itemFromNormalImage(const char *normalImage, const char *selectedImage, const char *disabledImage, CCObject* target, SEL_MenuHandler selector);
         /** initializes a menu item with a normal, selected  and disabled image with target/selector */
         bool initFromNormalImage(const char *normalImage, const char *selectedImage, const char *disabledImage, CCObject* target, SEL_MenuHandler selector);
+        
+        
     };
     
     /** @brief A CCMenuItemToggle

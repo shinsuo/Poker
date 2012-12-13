@@ -14,9 +14,15 @@ public:
 	
 	// a selector callback
 	virtual void menuCloseCallback(CCObject* pSender);
+    virtual void shuffle(CCObject *pSender);
+    virtual void update(cocos2d::ccTime dt);
 
 	// implement the "static node()" method manually
 	LAYER_NODE_FUNC(HelloWorld);
+    
+private:
+    cocos2d::CCMenu *m_menu;
+    virtual void shuffleDone();
 };
 
 #endif // __HELLOWORLD_SCENE_H__

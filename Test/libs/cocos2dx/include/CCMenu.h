@@ -122,7 +122,7 @@ namespace cocos2d{
 		virtual void setIsOpacityModifyRGB(bool bValue) {CC_UNUSED_PARAM(bValue);}
 	    virtual bool getIsOpacityModifyRGB(void) { return false;}
 
-	protected:
+	public:
 		CCMenuItem* itemForTouch(CCTouch * touch);
 		tCCMenuState m_eState;
 		CCMenuItem *m_pSelectedItem;

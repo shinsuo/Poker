@@ -140,6 +140,8 @@
 		54D61A701674D14000143430 /* RootViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 54D61A6F1674D14000143430 /* RootViewController.mm */; };
 		54D61A741674D14000143430 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54D61A731674D14000143430 /* AppDelegate.cpp */; };
 		54D61A771674D14000143430 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54D61A761674D14000143430 /* HelloWorldScene.cpp */; };
+		54D61A821675687E00143430 /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 54D61A811675687E00143430 /* 6.png */; };
+		54D61A8916757FD500143430 /* ttt.png in Resources */ = {isa = PBXBuildFile; fileRef = 54D61A8816757FD500143430 /* ttt.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -421,6 +423,8 @@
 		54D61A731674D14000143430 /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
 		54D61A751674D14000143430 /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
 		54D61A761674D14000143430 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
+		54D61A811675687E00143430 /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 6.png; path = Resources/6.png; sourceTree = "<group>"; };
+		54D61A8816757FD500143430 /* ttt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ttt.png; path = Resources/ttt.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -489,6 +493,8 @@
 		54D618CC1674D13E00143430 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				54D61A8816757FD500143430 /* ttt.png */,
+				54D61A811675687E00143430 /* 6.png */,
 				54D618CD1674D13E00143430 /* CloseNormal.png */,
 				54D618CF1674D13E00143430 /* CloseSelected.png */,
 				54D618D11674D13E00143430 /* Default.png */,
@@ -1083,6 +1089,8 @@
 				54D618DE1674D13E00143430 /* Icon.png in Resources */,
 				54D618E01674D13E00143430 /* Icon@2x.png in Resources */,
 				54D618E31674D13E00143430 /* iTunesArtwork in Resources */,
+				54D61A821675687E00143430 /* 6.png in Resources */,
+				54D61A8916757FD500143430 /* ttt.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1320,6 +1328,7 @@
 				54D61A7C1674D14000143430 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
